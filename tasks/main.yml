@@ -1,9 +1,9 @@
 ---
 - name: Install nginx
-  yum:
-    name: nginx
+  package:
+    name: "{{ nginx_package_name | default('nginx') }}"
     state: present
-
+    
 - name: Download Lighthouse
   get_url:
     url: "https://github.com/VKCOM/lighthouse/archive/refs/heads/{{ lighthouse_version }}.zip"
