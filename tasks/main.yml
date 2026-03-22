@@ -3,18 +3,18 @@
   package:
     name: "{{ nginx_package_name | default('nginx') }}"
     state: present
-    
+
 - name: Download Lighthouse
   get_url:
     url: "https://github.com/VKCOM/lighthouse/archive/refs/heads/{{ lighthouse_version }}.zip"
     dest: "/tmp/lighthouse.zip"
-
+    
 - name: Unarchive Lighthouse
   unarchive:
     src: "/tmp/lighthouse.zip"
     dest: "/var/www"
-    remote_src: yes
-    extra_opt: "--strip-components=1"
+    remote_src: yes              
+    extra_opts: "--strip-components=1"
 
 - name: Template nginx config
   template:
