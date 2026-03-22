@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Role Name
 =========
 
@@ -36,3 +37,6 @@ Author Information
 ------------------
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+=======
+# lighthouse-role
+>>>>>>> e6fe0c1d17c6c1aa37e12ce46b9996b54ec0bcc2
