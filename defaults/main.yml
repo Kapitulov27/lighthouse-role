@@ -1,0 +1,4 @@
+---
+lighthouse_version: "master"
+nginx_port: 80
+# defaults file for lighthouse-role

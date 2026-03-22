@@ -1,0 +1,5 @@
+server {
+    listen {{ nginx_port }};
+    root /var/www/lighthouse-{{ lighthouse_version }}/dist;
+    index index.html;
+}
